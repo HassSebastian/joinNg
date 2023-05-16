@@ -1,0 +1,51 @@
+<div class="container mt-5 mb-5">
+  <div
+    (click)="selected(0)"
+    class="card m-2 align-items-center p-2 bg-dark text-white hovered"
+    [ngClass]="menuNr == 0 ? 'bg-opacity-10' : 'bg-opacity-50'"
+  >
+    Summary
+  </div>
+  <div
+    (click)="selected(1)"
+    class="card m-2 align-items-center p-2 bg-dark text-white hovered"
+    [ngClass]="menuNr == 1 ? 'bg-opacity-10' : 'bg-opacity-50'"
+  >
+    Board
+  </div>
+
+  <div
+    (click)="selected(2)"
+    class="card m-2 align-items-center p-2 bg-dark text-white hovered"
+    [ngClass]="menuNr == 2 ? 'bg-opacity-10' : 'bg-opacity-50'"
+  >
+    addTask
+  </div>
+
+  <div
+    (click)="selected(3)"
+    class="card m-2 align-items-center p-2 bg-dark text-white hovered"
+    [ngClass]="menuNr == 3 ? 'bg-opacity-10' : 'bg-opacity-50'"
+  >
+    Contacts
+  </div>
+
+  <div
+    (click)="selected(4)"
+    class="card m-2 align-items-center p-2 bg-dark text-white mt-5 hovered"
+    [ngClass]="menuNr == 4 ? 'bg-opacity-10' : 'bg-opacity-50'"
+  >
+    Chat
+  </div>
+  <div
+    (click)="selected(5)"
+    class="card m-2 align-items-center p-2 text-white"
+    [ngClass]="
+      menuNr == 5
+        ? 'bg-danger text-break logOutTransform'
+        : 'bg-dark bg-opacity-50 hovered'
+    "
+  >
+    LogOut ?
+  </div>
+</div>

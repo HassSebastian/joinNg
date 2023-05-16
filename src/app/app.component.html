@@ -1,0 +1,22 @@
+<div *ngIf="!systemService.loginStatus" class="">
+  <app-login></app-login>
+</div>
+<div
+  class="position-absolute top-0 end-0 bg-dark bg-opacity-25"
+  style="width: 85%; height: 100px"
+>
+  <app-header></app-header>
+</div>
+<div
+  class="position-absolute top-0 bottom-0 bg-dark bg-opacity-50"
+  style="width: 15%"
+>
+  <app-nav-menu></app-nav-menu>
+</div>
+<div
+  class="position-absolute end-0 bottom-0 bg-dark bg-opacity-10"
+  style="width: 85%; height: calc(100% - 100px)"
+  *ngIf="systemService.loginStatus"
+>
+  <app-content-area></app-content-area>
+</div>

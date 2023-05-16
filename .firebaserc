@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bastisjoin": {
+      "hosting": {
+        "joinNg": [
+          "bastisjoin"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bastisjoin"
+  }
+}

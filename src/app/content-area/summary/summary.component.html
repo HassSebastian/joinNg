@@ -1,0 +1,55 @@
+<div class="d-flex justify-content-center align-items-center w-100 h-100">
+  <div class="d-flex">
+    <div class="">
+      <div class="d-flex p-5">
+        <div class="border border-5 text-center me-2 p-2 rounded-4 hovered">
+          <div class="fs-1 fw-bold">1</div>
+          <div>Task in Board</div>
+        </div>
+        <div
+          class="border border-5 text-center me-2 ms-2 p-2 rounded-4 hovered"
+        >
+          <div class="fs-1 fw-bold">1</div>
+          <div>Task in Progress</div>
+        </div>
+        <div class="border border-5 text-center ms-2 p-2 rounded-4 hovered">
+          <div class="fs-1 fw-bold">1</div>
+          <div>Awaiting Feedback</div>
+        </div>
+      </div>
+      <div class="d-flex p-5">
+        <div
+          class="border border-5 w-50 text-center me-2 p-2 rounded-4 hovered"
+        >
+          <div class="fs-1 fw-bold">1</div>
+          <div>Urgent</div>
+        </div>
+        <div
+          class="border border-5 w-50 text-center ms-2 p-2 rounded-4 hovered"
+        >
+          <div class="d-flex flex-column justify-content-around h-100">
+            <div class="fw-semibold">
+              {{ sysService.todayDate | date : "dd.MM.yyy" }}
+            </div>
+            <div>Deatline</div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div class="d-flex p-5">
+        <div
+          class="border border-5 w-50 text-center me-2 p-2 rounded-4 hovered"
+        >
+          <div class="fs-1 fw-bold">1</div>
+          <div>To-Do</div>
+        </div>
+        <div
+          class="border border-5 w-50 text-center ms-2 p-2 rounded-4 hovered"
+        >
+          <div class="fs-1 fw-bold">1</div>
+          <div>Done</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
